@@ -1,0 +1,312 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* display: flex; */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Admin Dashboard Styles */
+.admin-container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #E3E8F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.sidebar .site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #27374E;
+    margin: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 15px;
+    background-color: #4a627a;
+    color: #ffffff;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a .icon {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #27374E;
+}
+
+.logout-section {
+    margin-top: 500px; /* Tambahkan jarak di sini */
+    text-align: center;
+}
+
+.logout-section a {
+    display: block;
+    padding: 15px;
+    background-color: #4a627a;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.logout-section a:hover {
+    background-color: #27374E;
+}
+
+.logout-section p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+.admin-main {
+    margin-left: 260px; /* Tambahkan sedikit jarak di sini */
+    padding: 62px;
+    width: calc(100% - 260px); /* Sesuaikan dengan margin-left */
+    background-color: #FFFFFF;
+}
+
+.admin-main h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.admin-main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.article-section {
+    background-color: #4a627a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.article-section .article-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.article-section .article-card p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.article-section .article-card .btn {
+    background: #27374E;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.article-section .article-card .btn:hover {
+    background: #9CB2BF;
+}
+
+.creation-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.creation-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.creation-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Mengatur jarak antar tombol */
+}
+
+.creation-buttons .btn {
+    background: #27374E;
+    color: #fff;
+    padding: 20px 40px; /* Menambahkan padding untuk memperbesar tombol */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.creation-buttons .btn:hover {
+    background: #9CB2BF;
+}
+
+.creation-buttons .btn i {
+    margin-right: 10px;
+}
+
+.form-container {
+    background-color: #4a627a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.form-container input, .form-container textarea, .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27374E;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #9CB2BF;
+}
+
+.message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none; /* default hidden */
+}
+
+/* Style untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4a627a;
+    color: white;
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+    flex: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #28a745; /* Hijau */
+}
+
+.btn-edit:hover {
+    background-color: #218838; /* Hijau lebih gelap */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Merah */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Merah lebih gelap */
+}
+
